@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[CV]Zihao Wang</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+
+        // img rep
+        var banners = ["./assets/images/more/001.jpeg","./assets/images/more/002.jpeg","./assets/images/more/003.jpeg","./assets/images/more/004.jpeg"]; // 图片地址
+        var counter = 0;
+        function run(){
+            setInterval(cycle,7000);  
+        }
+        function cycle(){
+            counter++;
+            if(counter == banners.length)    
+                counter = 0;
+            document.getElementById("banner").src = banners[counter];
+        }
+
+
+    </script>
+</head>
+
+<body onload = "run();">
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/self.jpeg" onload="loading()">
+                </section>
+
+                <h1 class="name">Zihao(Lee) Wang</h1>
+                <h4 class="info-job">Data Scientist</h4>
+
+            </section>
+
+            <!-- basic -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>Basic info</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>personal info</label>
+                        <span>Zihao Wang/male/25yo</span>
+                    </li>
+                    <li>
+                        <label>email</label>
+                        <span>boone2333@outlook.com</span>
+                    </li>
+                    <li>
+                        <label>phone</label>
+                        <span>+45 5261 8995</span>
+                    </li>
+                    <li>
+                        <label>address</label>
+                        <span>Skelhøvej 25, Lyngby</span>
+                    </li>
+                </ul>
+            </section>
+
+
+            <!-- lang -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>Languages</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>Enlish</label>
+                        <span>profecient</span>
+                    </li>
+                    <li>
+                        <label>Chinese</label>
+                        <span>native</span>
+                    </li>
+                    <li>
+                        <label>Danish</label>
+                        <span>modul 1</span>
+                    </li>
+                </ul>
+            </section>
+
+
+
+
+            <!-- lang 
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15168285219" target="_blank">151-6828-5219</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:ze.zh@hotmail.com" target="_blank">ze.zh@hotmail.com</a>
+                    </li>
+                    <li>
+                        <label>个人主页</label>
+                        <a href="http://0b11111110.com/" target="_blank">0b11111110.com/</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/0b11111110" target="_blank">github.com/0b11111110</a>
+                    </li>
+                </ul>
+            </section> 
+            -->
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>Skills</h2>
+                <hr/>
+                <ul>
+                    <li style="border-bottom: dotted 1px #000">
+                        <label>Python</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li style="border-bottom: dotted 1px #000">
+                        <label>Machine/Deep Learning</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li style="border-bottom: dotted 1px #000">
+                        <label>Algorithms for massive datasets</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li style="border-bottom: dotted 1px #000">
+                        <label>Linux</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li style="border-bottom: dotted 1px #000">
+                        <label>SQL</label>
+                        <progress value="75" max="100"></progress>
+                    </li>
+                    <li style="border-bottom: dotted 1px #000">
+                        <label>Computer vision and Image analysis</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li style="border-bottom: dotted 1px #000"> 
+                        <label>Model deployment (AWS, Docker, Git)</label>
+                        <progress value="65" max="100"></progress>
+                    </li>
+                    <li style="border-bottom: dotted 1px #000"> 
+                        <label>C/JAVA/Matlab</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                    <li> 
+                        <label>Arduino/STM32</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                    
+                </ul>
+            </section>
+
+
+            <!-- more pics -->
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>Pics</h2>
+                <hr/>
+                <img id="banner" alt="banner" src="./assets/images/more/001.jpeg" style="width: 100%;">
+            </section>
+
+        </section>
+
+        <section class="main">
+
+
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>Profile</h2>
+                <hr/>
+                <p style="line-height:130%">I am a passionate coder, who loves to face new challenges and eager to improve himself. In addition to my university studies, I have been developing practical skills as a data scientist for around 2 years with a number of related projects, which have shown me how best to collaborate with team members and take responsibility for my work.</p>
+            </section>
+
+
+            <!-- education -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</h2>
+                <hr/>
+
+                <ul>
+                    <li>
+                        <h3>
+                            <span> <b>M.Sc. in Computer Science and Engineering</b> <br/> <i>Technical University of Denmark</i> </span>
+                            <time>2018.9-2021.2</time>
+                        </h3>
+                        <p style="line-height:120%">&#9642 Academically, I resides at the intersection between computer technology and data science. On one hand, I continued the algorithmic study of computer science. On the other hand, my interest in machine learning and computer vision grows exponentially daily. <br/> 
+                            &#9642 In life, I immerse myself in the multicultural environment, which have shown me how to best collaborate with team members and take responsibility for my work. <br/>
+                            &#9642 Core courses: <br/>
+                            <table width="600">
+                                <tr>
+                                <th>Course name</th>
+                                <th>Mark(/12)</th>
+                                </tr>
+                                <tr>
+                                <td>Distributed Systems</td>
+                                <td>12</td>
+                                </tr>
+                                <tr>
+                                <td>Algorithmic techniques for modern data models</td>
+                                <td>10</td>
+                                </tr>
+                                <tr>
+                                <td>Deep learning</td>
+                                <td>12</td>
+                                </tr>
+                                <tr>
+                                <td>Advanced machine learning</td>
+                                <td>4</td>
+                                </tr>
+                                <tr>
+                                <td>Non-linear signal processing</td>
+                                <td>12</td>
+                                </tr>
+                                <tr>
+                                <td>Algorithms for Massive Data Sets</td>
+                                <td>7</td>
+                                </tr>
+                                <tr>
+                                <td>Computational tools for data science</td>
+                                <td>10</td>
+                                </tr>
+                            </table>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>
+                            <span><b>B.Sc. in Computer Science</b> <br/> <i>Nanjing University of Posts and Telecommunications</i></span>
+                            <time>2014-2018</time>
+                        </h3>
+                        <p style="line-height:120%">&#9642 Freed from high school, I was able to spend more time on my personal interests. I also volunteered for one year helping seniors at Young Volunteers Association. <br/> 
+                            &#9642 Meanwhile, I practiced embedded system development on multiple platforms like STM32 and Arduino. I constructed two middleware systems and familiarized myself with low-level development. <br/>
+                            &#9642 Core courses: <br/>
+                            <table width="600">
+                                <tr>
+                                <th>Course name</th>
+                                <th>Mark(/5)</th>
+                                </tr>
+                                <tr>
+                                <td>Advanced language programming</td>
+                                <td>4.7</td>
+                                </tr>
+                                <tr>
+                                <td>Operation system</td>
+                                <td>2.7</td>
+                                </tr>
+                                <tr>
+                                <td>Data structure and Algorithms</td>
+                                <td>4.1</td>
+                                </tr>
+                                <tr>
+                                <td>Computer Communications and Networks</td>
+                                <td>3.7</td>
+                                </tr>
+                                <tr>
+                                <td>Database systems</td>
+                                <td>4.4</td>
+                                </tr>
+                                <tr>
+                                <td>Compiler principles</td>
+                                <td>4.1</td>
+                                </tr>
+                                <tr>
+                                <td>Computer Organization</td>
+                                <td>4.2</td>
+                                </tr>
+                                <tr>
+                                <td>Advanced mathematics</td>
+                                <td>3.7</td>
+                                </tr>
+                                <tr>
+                                <td>Linear Algebra and Analytic geometry</td>
+                                <td>3.1</td>
+                                </tr>
+                                <tr>
+                                <td>Probability and Statistics</td>
+                                <td>3.7</td>
+                                </tr>
+                            </table>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+
+            
+             
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>Experience</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span><b>Data Scientist Internship</b> <br/> <i>Novo Nordisk A/S</i> </span>
+                            <time>Feb, 2020 - Feb, 2021</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>  </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span> <b>Teaching Assistant of Introduction to Machine Learning and Data Mining</b> </br> <i>DTU Compute</i> </span>
+                            <time>Sep, 2019 - Dec, 2019</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li style="line-height:120%">The best learning approach is through teaching. I love explaining the intricate concepts to the fellow students with my own interpretation and enjoy the delight on their faces the moment they grasp the ideas. And judging from the TA scores, the feeling is mutual.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span> <b>Short-term placement at SoC design department</b> </br> <i>IPGoal Microelectronics</i> </span>
+                            <time>Jun, 2017 - Sep, 2017</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li style="line-height:120%">I received technical training for the design and verification of NFC model and managed to play around with some small projects. Though personally I am not too proud of this experience for no solid achievement had been made during the period by me.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>Projects</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>Medical object detection</span>
+                        </h3>
+                            <p style="line-height:120%">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                Devised and implemented a fully automated pipeline from raw data file to accurate masking and counting. The aim of the project is to alleviate the workload of product quality control.
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                Master thesis
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                OpenCV, SciKits, Pytorch, AWS
+                            </p>
+                    </li>
+                    
+                    <li>
+                        <h3>
+                            <span>Unsupervised Image classification</span>
+                        </h3>
+                            <p style="line-height:120%">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                My responsibility is to deliver a look-up table for similarity check. I broke the need into two parts: feature vector extraction and a two-layer clustering.
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                Group project of size 2
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                transfer learning, GMM and k-d tree
+                            </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>Signal filter</span>
+                        </h3>
+                            <p style="line-height:120%">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                End-to-end development of an automatic sample filter for impurity check.
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                Individual project
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                XGBoost, kSVM, Bayesian Optimization, Streamlit and Docker
+                            </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>Smarter learning through knowledge augmentation</span>
+                            <span class="link">
+                                <a href="https://drive.google.com/file/d/1YK2ataJnxEksk6z5O3HIh-EFHqp1Lx8v/view?usp=sharing" target="_blank">Paper</a>
+                            </span>
+                        </h3>
+                            <p style="line-height:120%">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                Visualized multi-headed entity linker attention and re-interpreted the validity of knowledge distillation in current NLP models such as KnowBert.
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                Course project of 3 people
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                BERT, KnowBERT, AllenNLP
+                            </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>Latent variable model</span>
+                            <span class="link">
+                                <a href="https://drive.google.com/file/d/1ffEOk0yFCufuojrrPwCrmtir5bsmPIZA/view?usp=sharing" target="_blank">Paper</a>
+                            </span>
+                        </h3>
+                            <p style="line-height:120%">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                We managed to infer and implement NMF with EM algorithm and Gibbs sampler respectively from scratch and utilize them on a face reconstruction task.
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                Course project of 3 people
+                            </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>PageRank</span>
+                            <span class="link">
+                                <a href="https://drive.google.com/file/d/1Kt0W_mg_-BK9Q2hpoEoFxnZi3ijtQZ6i/view?usp=sharing" target="_blank">Paper</a>
+                            </span>
+                        </h3>
+                            <p style="line-height:120%">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                We managed to implement a search engine on Wikipedia with PageRank calculated by MapReduce. The output is a weighted graph presenting all related name entities and their interrelationships stored in a SQLite3 database for fast query.
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                Course project of 3 people
+                            </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>Intelligent fitness system</span>
+                            <span class="link">
+                                <a href="https://eudl.eu/doi/10.1007/978-3-319-60753-5_10" target="_blank">Index</a>
+                            </span>
+                        </h3>
+                            <p style="line-height:120%">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                Designed and built an integrated middleware consisting of SoC equipped with various sensors, remote database and mobile application. This system is designed to deliver the vital reads during training and provide guidance accordingly.
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                Group project of size 2
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                Java, Arduino, C, PHP
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                Publishment at 2<sup>nd</sup> EAI International Conference on Industrial Technologies and Applications. <br/>
+                                2<sup>nd</sup> prize of the 3<sup>rd</sup> 3S Cup National College Sdudent Internet of Things Technology and Application Competition. <br/>
+                                3<sup>rd</sup> prize of the 18<sup>th</sup> "Innovation Cup" Academic Competition.
+                            </p>
+                    </li>
+                
+                </ul>
+            </section>
+
+
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>Hobbies</h2>
+                <hr/>
+                <p style="line-height:130%"></p>
+            </section>
+
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>Template modified from <a href="https://gitee.com/itsay/resume" target="_blank">https://gitee.com/itsay/resume.</a>
+            <time>Last update: 1/1/2021</time>.</p>
+    </footer>
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/lee.4396/" target="_blank">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/zihao-wang-494245180" target="_blank">Linkedin</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
